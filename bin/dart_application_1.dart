@@ -1,16 +1,41 @@
 void main() {
-  int day = 4;
-  if (day == 1 || day == 2 || day == 3 || day == 4 || day == 5) {
-    print('jumush kun');
-  } else if (day >= 6 && day <= 7) {
-    print('es aluu');
-  } else if (day >= 8) {
-    print('sen adashyn jumada 7 kun bar');
+  List<List<int>> a = [
+    [121, 3, 23, 24, 24],
+    [121, 3, 23, 24, 24]
+  ];
+
+  for (int i = 0; i < a.length; i++) {
+    int min = a[i][0];
+    for (int j = 0; j < a[i].length; j++) {
+      int b = a[i][j];
+      if (b < min) {
+        min = b;
+      }
+    }
+    print(min);
   }
-  List a = [122, 'dfgh', 1.2, true];
-  Set s = {12, '221', 32.3, true};
-  Map m = {1: 'fds', 2: 22, 3: 22};
-  print(a);
+
+  // List a = [121, 3, 23, 24, 24];
+
+  // for (var aa in a) {
+  //   print(aa);
+  // }
+  // int day = 4;
+  // if (day == 1 || day == 2 || day == 3 || day == 4 || day == 5) {
+  //   print('jumush kun');
+  // } else if (day >= 6 && day <= 7) {
+  //   print('es aluu');
+  // } else if (day >= 8) {
+  //   print('sen adashyn jumada 7 kun bar');
+  // }
+  // ////////////////////////////////////////
+  // List a = [122, 'dfgh', 1.2, true];
+  // Set s = {12, '221', 32.3, true};
+  // Map m = {1: 'fds', 2: 22, 3: 22};
+  // String aa = 'fdsafgh';
+  // print(aa.length);
+  // // a.addAll(s);
+  // print(a);
 
   //!= не равно
   // == равно
